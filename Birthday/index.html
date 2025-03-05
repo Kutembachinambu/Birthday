@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <title>Lawrence's 50th Birthday</title>
     <style>
-        html{
+        html {
             height: 100%;
             scroll-behavior: smooth;
         }
@@ -23,12 +23,13 @@
             margin: 0;
             padding: 0;
         }
+
         .home {
             margin: 20px 0;
             font-size: 20px;
             padding-right: 10px;
-            
         }
+
         header {
             padding: 8px;
             padding-left: 40px;
@@ -36,36 +37,40 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+
         nav {
-            display:grid;
+            display: grid;
             justify-content: left;
             gap: 20px;
             padding: 20px;
             padding-top: 70px;
         }
+
         nav a {
             color: rgb(255, 217, 0);
             text-decoration: none;
             font-family: 'Pacifico';
             font-size: 24px;
-            
         }
+
         .whole-page {
             display: flex;
-
+            flex-wrap: wrap;
         }
+
         .event-details {
             margin: 20px 0;
             font-size: 20px;
             padding-top: 2px;
-            
         }
+
         .countdown {
             font-size: 30px;
             font-weight: bold;
             margin-top: 20px;
             padding-left: 220px;
         }
+
         .homenav {
             background-image: url('gold-confetti1.png');
             background-size: cover;
@@ -74,9 +79,8 @@
             color: gold;
             width: 100%;
             height: 115vh;
-        
-           
         }
+
         .left-side {
             position: fixed;
             height: 100%;
@@ -84,24 +88,20 @@
             background: linear-gradient(90deg, #000000, #c89116);
             width: 16.85%;
         }
-        .gallery 
-        {
+
+        .gallery {
             background-position: center;
             color: #ad7120;
             width: 83.15%;
             background-size: contain;
             margin-left: auto;
-            height:fit-content;
+            height: fit-content;
             background-size: cover;
             background-repeat: no-repeat;
             background-color: rgb(217, 213, 192);
             color: black;
-            img {
-                height: 500px;
-                width: 500px;
-                display: block;
-            }
         }
+
         .gallery-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -110,30 +110,35 @@
             width: 90%;
             margin: auto;
         }
+
         .gallery-item {
             border: 3px solid gold;
             border-radius: 10px;
             overflow: hidden;
         }
+
         .gallery-item img {
             width: 100%;
             height: auto;
             display: block;
         }
+
         #counter {
             font-size: 26px;
             font-weight: bold;
             padding-top: 150px;
             color: white;
         }
+
         .countdown {
             font-size: 45px;
             font-weight: bold;
-            color:blanchedalmond;
+            color: blanchedalmond;
         }
+
         .programme {
             background-image: url('Programme.png');
-            background-size:auto;
+            background-size: auto;
             background-position: center;
             background-color: black;
             color: gold;
@@ -144,7 +149,7 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-           
+
         .menu {
             background-image: url('Menu.png');
             background-position: center;
@@ -153,32 +158,26 @@
             width: 83.15%;
             background-size: contain;
             margin-left: auto;
-            height:115vh;
+            height: 115vh;
             padding-top: 5px;
             background-size: cover;
             background-repeat: no-repeat;
         }
+
         .dresscode {
             background-position: center;
             color: #ad7120;
             width: 83.15%;
             background-size: contain;
             margin-left: auto;
-            height:fit-content;
+            height: fit-content;
             padding-bottom: 5px;
             background-size: cover;
             background-repeat: no-repeat;
             background-color: gold;
             color: black;
-            img {
-                height: auto;
-                width: 100%;
-                object-fit: contain;
-                
-            }
-        
-
         }
+
         .rsvp {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -186,6 +185,7 @@
             padding: 50px;
             padding-left: 150px;
         }
+
         .container {
             max-width: 55%;
             margin: 0 auto;
@@ -195,25 +195,33 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             text-align: center;
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         label {
             display: block;
             margin-bottom: 5px;
         }
-        input, select, textarea {
+
+        input,
+        select,
+        textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         .form-actions {
             text-align: center;
         }
+
         button {
             padding: 10px 20px;
             background-color: #007bff;
@@ -222,10 +230,44 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #0056b3;
         }
-        
+
+        @media (max-width: 768px) {
+            .left-side {
+                width: 100%;
+                position: relative;
+                background: linear-gradient(180deg, #000000, #c89116);
+            }
+
+            .whole-page {
+                flex-direction: column;
+            }
+
+            .homenav {
+                height: auto;
+            }
+
+            .countdown {
+                padding-left: 0;
+            }
+
+            .programme,
+            .menu,
+            .gallery,
+            .dresscode {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .container {
+                max-width: 90%;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -357,19 +399,19 @@
         <header>Memories</header>
         <p>The best memories are never picture perfect</p>
     <div class="gallery-container">
-        <div class="gallery-item"><img src="lole14.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole1.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole2.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole3.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole4.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole5.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole6.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole7.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole8.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole9.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole11.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole12.jpeg" alt="Birthday Memory"></div>
-        <div class="gallery-item"><img src="lole13.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole14.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole1.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole2.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole3.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole4.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole5.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole6.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole7.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole8.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole9.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole11.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole12.jpeg" alt="Birthday Memory"></div>
+        <div class="gallery-item"><img src="lole/lole13.jpeg" alt="Birthday Memory"></div>
     </div>
         
     </section>
