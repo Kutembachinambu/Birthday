@@ -235,7 +235,7 @@
             background-color: #0056b3;
         }
 
-        @media (min-width: 601px) and (max-width: 1024px) {
+        @media (max-width: 768px) {
             .left-side {
                 width: 100%;
                 position: relative;
@@ -263,29 +263,30 @@
             color: gold;
             }
 
-            .nav {
+            .drawer {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 250px;
             height: 100%;
-            background: transparent;
+            background-color: black;
             color: gold;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
             z-index: 1000;
             }
 
-            .nav a {
+            .drawer a {
             display: block;
             margin: 10px 0;
             font-size: 20px;
             }
 
-            .nav.open {
+            .drawer.open {
             display: block;
             }
+            .programme
 
             .countdown {
                 padding-left: 0;
@@ -305,74 +306,40 @@
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            .event-details {
-            margin: 10px 0;
-            font-size: 12px;
-            padding-top: 0px;
-            }
-            header {
-                padding: 0px;
-                padding-left: 30px;
-                font-size: 15px;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-            .home {
-                margin: 10px 0;
-                font-size: 15px;
-                padding-right: 10px;
-                padding: 0px;
-            }
-            #counter {
-            font-size: 15px;
-            font-weight: bold;
-            padding-top: 25px;
-            color: white;
-            }
-
-            .countdown {
-                font-size: 16px;
-                font-weight: bold;
-                color: blanchedalmond;
-                padding-left: 40px;
-                padding-top: 0px;
-                padding-bottom: 60px;
-            }
 
         }
             
-        @media (max-width: 600px) {
+        @media (max-width: 480px) {
             .menu-icon {
-            display: none;
-            }
-            
-
-            nav {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100%;
-            background-color: transparent;
-            color: white;
-            padding: 20px;
-            z-index: 1000;
+                display: none;
             }
 
-            nav a {
-            display: block;
-            margin: 10px 0;
-            font-size: 20px;
+            .nav {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
             }
 
-            nav.open {
-            display: block;
+            .nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 20px;
+            }
+
+            .nav.open {
+                display: block;
             }
             body {
             font-size: 18px;
-            }
-         }
+        }
             .container {
                 width: 98%;
             }
@@ -428,12 +395,7 @@
             padding-right: 10px;
             padding: 0px;
         }
-        
-        .left-side {
-            display: none;
-            
         }
-    
     </style>
 </head>
 <body>
